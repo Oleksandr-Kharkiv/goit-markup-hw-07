@@ -69,7 +69,7 @@
      <symbol id="icon-send" viewBox="0 0 32 32">
       <path d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/>
     </symbol>
-    <symbol id="icon-check" viewBox="0 0 32 32">
+    <symbol id="icon-accept" viewBox="0 0 32 32">
       <path stroke="#fff" stroke-width=".492" d="m4.817 15.389-.169-.162-2.544 2.41 8.962 8.55L29.895 8.225l-2.527-2.411L11.066 21.35l-6.249-5.962z"/>
     </symbol>
     <symbol id="icon-Vector" viewBox="0 0 32 32">

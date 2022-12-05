@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
   </head>
 
   <body>
@@ -496,88 +496,88 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-modal" data-modal-close>
+        <button type="button" class="modal__close" data-modal-close>
           <svg width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 
-        <!--                               форма модального вікна       -->
+        <!--                          форма модального вікна              -->
 
-        <form class="js-speaker-form form-modal">
-          <p class="title-form">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="group-inputs">
-            <div class="item-group">
-              <label for="user-name" class="title-input">Ім'я</label>
-              <div class="thumb-form">
+        <form class="js-speaker-form order-form">
+          <p class="order-form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="order-form__group">
+            <div class="order-form__item">
+              <label for="user-name" class="order-form__label">Ім'я</label>
+              <div class="order-form__thumb">
                 <input
                   type="text"
                   name="name"
                   id="user-name"
-                  class="input-box"
+                  class="order-form__input"
                 />
-                <svg width="18" height="18" class="icon-modal">
+                <svg width="18" height="18" class="order-form__icon">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </div>
             </div>
-            <div class="item-group">
-              <label for="user-tel" class="title-input">Телефон</label>
-              <div class="thumb-form">
+            <div class="order-form__item">
+              <label for="user-tel" class="order-form__label">Телефон</label>
+              <div class="order-form__thumb">
                 <input
                   type="tel"
                   name="phone"
                   id="user-tel"
-                  class="input-box"
+                  class="order-form__input"
                 />
-                <svg width="18" height="18" class="icon-modal">
+                <svg width="18" height="18" class="order-form__icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
             </div>
-            <div class="item-group">
-              <label for="user-email" class="title-input">Пошта</label>
-              <div class="thumb-form">
+            <div class="order-form__item">
+              <label for="user-email" class="order-form__label">Пошта</label>
+              <div class="order-form__thumb">
                 <input
                   type="email"
                   name="e-mail"
                   id="user-email"
-                  class="input-box"
+                  class="order-form__input"
                 />
-                <svg width="18" height="18" class="icon-modal">
+                <svg width="18" height="18" class="order-form__icon">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
             </div>
-            <div class="item-group">
-              <label for="user-comment" class="title-input">Коментар</label>
+            <div class="order-form__item">
+              <label for="user-comment" class="order-form__label">Коментар</label>
               <textarea
                 name="comment"
                 id="user-comment"
                 placeholder="Введіть текст"
-                class="input-box comment"
+                class="order-form__input order-form__input--comment"
               ></textarea>
             </div>
           </div>
-          <div class="agree-form">
+          <div class="rules">
             <input
               type="checkbox"
               name="accept"
               value="accept"
               id="accept"
-              class="check-form visually-hidden"
+              class="rules__accept visually-hidden "
             />
-            <label for="accept" class="accept-contract">
-              <span>
+            <label for="accept" class="rules__title">
+              <span class="rules__checkbox">
                 <svg width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
+                  <use href="./images/icons.svg#icon-accept"></use>
                 </svg>
               </span>
               Погоджуюся з розсилкою та приймаю
-              <a href="#" class="contract-terms">Умови договору</a>
+              <a href="#" class="rules__description">Умови договору</a>
             </label>
           </div>
-          <button type="submit" class="button-submit-form">Відправити</button>
+          <button type="submit" class="order-form__submit">Відправити</button>
         </form>
       </div>
     </div>
