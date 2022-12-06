@@ -18,33 +18,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="site-nav">
+        <nav class="navigation">
           <a href="./index.html" class="logo"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студія</a>
+          <ul class="site-nav page-header__site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link nav-list__link--current">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
             </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Контакти</a>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="connection-list">
+        <ul class="connection-list page-header__connection-list">
           <li class="connection-list__item">
             <a href="mailto:info@devstudio.com" lang="en" class="link connection-list__link">
-              <svg width="16" height="12" class="connection-list__logo">
+              <svg width="16" height="12" class="connection-list__icon">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com
@@ -52,7 +51,7 @@
           </li>
           <li class="connection-list__item">
             <a href="tel:+380961111111" class="link connection-list__link">
-              <svg width="12" height="16" class="connection-list__logo">
+              <svg width="12" height="16" class="connection-list__icon">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11
@@ -62,10 +61,10 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section our-portfolio">
         <div class="container">
           <h1 class="section-title visually-hidden">Наші проєкти</h1>
-          <ul class="filter">
+          <ul class="filter our-portfolio__filter">
             <li class="filter__item">
               <button type="button" class="filter__button">Усі</button>
             </li>
@@ -85,7 +84,7 @@
           <ul class="portfolio">
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/tehnokriak.jpg"
                     alt="на фото відкритий ноутбук на якому зображено дві жінки та чоловік"
@@ -99,7 +98,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Технокряк</h2>
                   <p class="portfolio__category">Веб-сайт</p>
                 </div>
@@ -107,7 +106,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/poster-new-orlean-vs-golden-star.jpg"
                     alt="на фото зображено постер з двома баскетболістами"
@@ -121,7 +120,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">
                     Постер New Orlean vs Golden Star
                   </h2>
@@ -131,7 +130,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/restaurant-seafood.jpg"
                     alt="на фото зображено рибу та назву ресторану"
@@ -145,7 +144,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Ресторан Seafood</h2>
                   <p class="portfolio__category">Додаток</p>
                 </div>
@@ -153,7 +152,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/project-prime.jpg"
                     alt="на фото зображені бездротові навушники"
@@ -167,7 +166,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Проєкт Prime</h2>
                   <p class="portfolio__category">Маркетинг</p>
                 </div>
@@ -175,7 +174,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/project-boxes.jpg"
                     alt="на фото зображено біла і коричнева коробки"
@@ -189,7 +188,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Проєкт Boxes</h2>
                   <p class="portfolio__category">Додаток</p>
                 </div>
@@ -197,7 +196,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/inspiration-has-no-borders.jpg"
                     alt="на фото монітор apple на якому зображено карту світу"
@@ -211,7 +210,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Inspiration has no Borders</h2>
                   <p class="portfolio__category">Веб-сайт</p>
                 </div>
@@ -219,7 +218,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/publishing-house-limited-edition.jpg"
                     alt="на фото відкрита книга"
@@ -233,7 +232,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Видання Limited Edition</h2>
                   <p class="portfolio__category">Дизайн</p>
                 </div>
@@ -241,7 +240,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/project-lab.jpg"
                     alt="на фото зображена паперова лейба з написом LAB EL TAG"
@@ -255,7 +254,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Проєкт LAB</h2>
                   <p class="portfolio__category">Маркетинг</p>
                 </div>
@@ -263,7 +262,7 @@
             </li>
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
-                <div class="portfolio__container">
+                <div class="portfolio__thumb">
                   <img
                     src="./images/growing-business.jpg"
                     alt="на фото ноутбук на якому відкрито сайт Growing Business"
@@ -277,7 +276,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="portfolio__thumb">
+                <div class="portfolio__container">
                   <h2 class="portfolio__project">Growing Business</h2>
                   <p class="portfolio__category">Додаток</p>
                 </div>
@@ -294,8 +293,8 @@
           <a href="./index.html" class="logo logo--white"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <address class="our-contacts">
-            <ul class="list contacts-list">
+          <address class="page-footer__our-contacts">
+            <ul class="contacts-list">
               <li class="contacts-list__item">
                 <a
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -320,7 +319,7 @@
 
         <div class="page-footer__join">
           <span class="page-footer__proposal">приєднуйтесь</span>
-          <ul class="list social-list">
+          <ul class="social-list">
             <li class="social-list__item">
               <a href="" target="_blank" class="social-list__link social-list__link--dark">
                 <svg width="20" height="20">

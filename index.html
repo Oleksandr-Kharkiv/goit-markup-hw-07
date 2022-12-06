@@ -18,33 +18,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="site-nav">
+        <nav class="navigation">
           <a href="./index.html" class="logo"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link nav-list__link--current">Студія</a>
+          <ul class="site-nav page-header__site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
             </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Контакти</a>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="connection-list">
+        <ul class="connection-list page-header__connection-list">
           <li class="connection-list__item">
             <a href="mailto:info@devstudio.com" lang="en" class="link connection-list__link">
-              <svg width="16" height="12" class="connection-list__logo">
+              <svg width="16" height="12" class="connection-list__icon">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com
@@ -52,7 +51,7 @@
           </li>
           <li class="connection-list__item">
             <a href="tel:+380961111111" class="link connection-list__link">
-              <svg width="12" height="16" class="connection-list__logo">
+              <svg width="12" height="16" class="connection-list__icon">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11
@@ -71,11 +70,11 @@
           </button>
         </div>
       </section>
-      <!--                               переваги                         -->
-      <section class="section advantages">
+      <!--                        особливість    переваги                        -->
+      <section class="section feature">
         <div class="container">
           <h2 class="section__title visually-hidden">Наші переваги</h2>
-          <ul class="list benefits-list">
+          <ul class="benefits-list">
             <li class="benefits-list__item">
               <div class="benefits-list__icon">
                 <svg width="70" height="70">
@@ -126,11 +125,11 @@
           </ul>
         </div>
       </section>
-      <!--                             що ми робимо                       -->
+      <!--                             що ми робимо                              -->
       <section class="section">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="list works-list">
+          <ul class="works-list">
             <li class="works-list__item">
               <img
                 src="./images/desktop.jpg"
@@ -171,10 +170,10 @@
         </div>
       </section>
       <!--                                команда                         -->
-      <section class="section command">
-        <div class="container command__container">
+      <section class="section our-team">
+        <div class="container our-team__container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="list team-list">
+          <ul class="team-list">
             <li class="team-list__card">
               <img
                 src="./images/product-designer.jpg"
@@ -186,7 +185,7 @@
               <div class="team-list__container">
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-list__specialization">Product Designer</p>
-                <ul class="list social-list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" target="_blank" class="social-list__link">
                       <svg width="20" height="20">
@@ -229,7 +228,7 @@
               <div class="team-list__container">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-list__specialization">Frontend Developer</p>
-                <ul class="list social-list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" target="_blank" class="social-list__link">
                       <svg width="20" height="20">
@@ -272,7 +271,7 @@
               <div class="team-list__container">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p lang="en" class="team-list__specialization">Marketing</p>
-                <ul class="list social-list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" target="_blank" class="social-list__link">
                       <svg width="20" height="20">
@@ -315,7 +314,7 @@
               <div class="team-list__container">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team-list__specialization">UI Designer</p>
-                <ul class="list social-list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" target="_blank" class="social-list__link">
                       <svg width="20" height="20">
@@ -356,7 +355,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="list client-list">
+          <ul class="client-list">
             <li class="client-list__item">
               <a href="" class="client-list__link">
                 <svg width="106" height="60">
@@ -413,8 +412,8 @@
           <a href="./index.html" class="logo logo--white"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <address class="our-contacts">
-            <ul class="list contacts-list">
+          <address class="page-footer__our-contacts">
+            <ul class="contacts-list">
               <li class="contacts-list__item">
                 <a
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -439,7 +438,7 @@
 
         <div class="page-footer__join">
           <span class="page-footer__proposal">приєднуйтесь</span>
-          <ul class="list social-list">
+          <ul class="social-list">
             <li class="social-list__item">
               <a href="" target="_blank" class="social-list__link social-list__link--dark">
                 <svg width="20" height="20">
