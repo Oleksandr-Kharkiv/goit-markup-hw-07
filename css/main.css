@@ -26,7 +26,7 @@ ul {
   padding-bottom: 0;
 }
 
-.list, .portfolio, .filter, .contacts-list, .client-list, .social-list, .team-list, .works-list, .benefits-list, .connection-list, .site-nav {
+.portfolio, .filter, .contacts-list, .client-list, .social-list, .team-list, .works-list, .benefits-list, .connection-list, .site-nav {
   list-style: none;
   padding: 0;
   margin: 0;
